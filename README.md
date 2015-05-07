@@ -137,30 +137,30 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例
 
 ## 组件库
-[Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap)
-[angular-common](https://github.com/michaeljcalkins/angular-common)
-[angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.
-[textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!
-[angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.
-[angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:
-[famous-angular](https://github.com/Famous/famous-angular) - Bring structure to your Famo.us apps with the power of AngularJS.
-[angular-hotkeys](https://github.com/chieffancypants/angular-hotkeys) - Configuration-centric keyboard shortcuts for your Angular apps.
-[angular-filter](https://github.com/a8m/angular-filter) - Bunch of useful filters for AngularJS (with no external dependencies!)
-[angular-moment](https://github.com/urish/angular-moment) - Moment.JS directives for Angular.JS (timeago and more)
-[angular-file-upload](https://github.com/nervgh/angular-file-upload) - Angular File Upload is a module for the AngularJS framework
-[mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3
-[ngProgress](https://github.com/VictorBjelkholm/ngProgress) - Angular provider for slim loading bar at the top of the page
-[ngFx](https://github.com/Hendrixer/ngFx) - Simple, Beautiful animation library for Angular
-[ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications
-[ngReact](https://github.com/davidchang/ngReact) - Use React Components in Angular
-[angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js
-[angular-schema-form](https://github.com/Textalk/angular-schema-form) - Generate forms from a JSON schema, with AngularJS!
-[angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS
-[forms-angular](https://github.com/forms-angular/forms-angular) - Probably the most opinionated framework in the world
-[angular-form-for](https://github.com/bvaughn/angular-form-for) - Set of Angular directives to simplify creating and validating HTML forms.
-[ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular
-[AngularAgility](https://github.com/AngularAgility/AngularAgility) - A set of useful Angular.js extensions implementing common UX patterns to improve productivity.
-[angular-datepicker](https://github.com/alongubkin/angular-datepicker)
-[ngDroplet](https://github.com/Wildhoney/ngDroplet)
-[angular-parallax](https://github.com/oblador/angular-parallax)
-[angular-media-player](https://github.com/mrgamer/angular-media-player)
+[Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap) 
+[angular-common](https://github.com/michaeljcalkins/angular-common)  
+[angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
+[textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!  
+[angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
+[angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
+[famous-angular](https://github.com/Famous/famous-angular) - Bring structure to your Famo.us apps with the power of AngularJS.  
+[angular-hotkeys](https://github.com/chieffancypants/angular-hotkeys) - Configuration-centric keyboard shortcuts for your Angular apps.  
+[angular-filter](https://github.com/a8m/angular-filter) - Bunch of useful filters for AngularJS (with no external dependencies!)  
+[angular-moment](https://github.com/urish/angular-moment) - Moment.JS directives for Angular.JS (timeago and more)  
+[angular-file-upload](https://github.com/nervgh/angular-file-upload) - Angular File Upload is a module for the AngularJS framework  
+[mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3  
+[ngProgress](https://github.com/VictorBjelkholm/ngProgress) - Angular provider for slim loading bar at the top of the page  
+[ngFx](https://github.com/Hendrixer/ngFx) - Simple, Beautiful animation library for Angular  
+[ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications  
+[ngReact](https://github.com/davidchang/ngReact) - Use React Components in Angular  
+[angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js  
+[angular-schema-form](https://github.com/Textalk/angular-schema-form) - Generate forms from a JSON schema, with AngularJS!  
+[angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS  
+[forms-angular](https://github.com/forms-angular/forms-angular) - Probably the most opinionated framework in the world  
+[angular-form-for](https://github.com/bvaughn/angular-form-for) - Set of Angular directives to simplify creating and validating HTML forms.  
+[ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular  
+[AngularAgility](https://github.com/AngularAgility/AngularAgility) - A set of useful Angular.js extensions implementing common UX patterns to improve productivity.  
+[angular-datepicker](https://github.com/alongubkin/angular-datepicker)  
+[ngDroplet](https://github.com/Wildhoney/ngDroplet)  
+[angular-parallax](https://github.com/oblador/angular-parallax)  
+[angular-media-player](https://github.com/mrgamer/angular-media-player)  
