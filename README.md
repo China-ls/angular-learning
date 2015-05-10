@@ -7,10 +7,10 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
     + [模板](#模板)
     + [程序结构](#程序结构)
 + 资源
-  + [资源](资源)
-  + [电子书](电子书)
+  + [资源](#资源)
+  + [电子书](#电子书)
   + [教程](#教程)
-  + [基础项目](#基础项目)
+  + [基础项目](#基础项目(seed))
   + [编码风格/设计模式/最佳实践](#编码风格/设计模式/最佳实践)
   + [组件库](#组件库)
 
@@ -24,13 +24,14 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
   *把通过数据填充页面模板的工作从后端移到了前端，使要动态更新的页面有了更好的代码结构*
 
-  + [初始化(Bootstrap)]
-  + [数据绑定(Data Binding)]
+  + 初始化(Bootstrap)
+  + 数据绑定(Data Binding)
   + 作用域(Scopes)
-  + [编译(Compiler)]
-  + [表达式(Expression)]
-  + [指令(Directive)]
+  + 编译(Compiler)
+  + 表达式(Expression)
+  + 指令(Directive)
   + 视图(View)和路由(Route)
+    + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)
   + 过滤器(Filter)
   + 服务/供应商(Services/Providers)
   + 表单(Form) 和 AngularJS的表单概念
@@ -46,7 +47,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + 和服务器通讯: $http, $resource
   + 拦截器
   + [restangular](https://github.com/mgonto/restangular) - AngularJS service to handle Rest API Restful Resources properly and easily
-  + [angular-restmod](https://github.com/platanus/angular-restmod) - Rails inspired REST-API ORM for Angular
+  + [angular-restmod](https://github.com/platanus/angular-restmod) - Rails inspired REST-API ORM for Angular  
+  + [以更RESTful的方式使用ngResource](http://my.oschina.net/buwei/blog/185082)  
 + 路由
   + ui-router
 + 常量
@@ -61,6 +63,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ## UI
 + 动画
+  + [angular-fx](https://github.com/720kb/angular-fx) - Angular CSS3 animation directives
 
 ## 性能优化
 + 缓存(Cache)
@@ -84,8 +87,11 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + 后端代管 Hosted Backends
 + 权限
   + [angular-client-side-auth](https://github.com/fnakstad/angular-client-side-auth) - One way to implement authentication/authorization in Angular applications
+ + [angular-authentication-example](https://github.com/cornflourblue/angular-authentication-example) - AngularJS Basic HTTP Authentication Example  
 + [angular-cms](https://github.com/jonniespratley/angular-cms) - A light weight CMS built with Angular.js and Yeoman
 + [ngSocket](https://github.com/angular/ngSocket) - WebSocket support for angular
++ 加密解密
+  + [angularjs-crypto](https://github.com/pussinboots/angularjs-crypto) - decrytion/encryption of json in http requests/responses
 
 ----------------
 
@@ -94,13 +100,13 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [AngularJs2.x Github](https://github.com/angular/angular)  
 [AngularJS中文社区](http://angularjs.cn/)  
 [官方文档](https://docs.angularjs.org/api)  
-[官方指南](https://docs.angularjs.org/guide) - [中文版](http://docs.ngnice.com/guide)
+[官方指南](https://docs.angularjs.org/guide) - [中文版](http://docs.ngnice.com/guide)  
 [awesome-angularjs](https://github.com/gianarb/awesome-angularjs) - AngularJs 服务,指令,实用工具资源  
-[AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源  
-[frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)
-[angular-resources](https://github.com/distilledhype/angular-resources)
-[破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)
-[ng-newsletter](http://www.ng-newsletter.com/)
+[AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源 
+[frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)  
+[angular-resources](https://github.com/distilledhype/angular-resources)  
+[破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
+[ng-newsletter](http://www.ng-newsletter.com/)  
 
 ## 电子书
 [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)  
@@ -111,35 +117,35 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [AngularJS体验式编程系列文章](http://blog.fens.me/series-angular/)  
 [A Better Way to Learn AngularJS](https://thinkster.io/angulartutorial/a-better-way-to-learn-angularjs/)  
 [使用AngularJS构建大型Web应用](http://www.infoq.com/cn/news/2013/02/angular-web-app)  
-[Angular土豆视屏教程](http://www.tudou.com/plcover/AURJrOM6ntc/)
-[angular-phonecat](https://github.com/angular/angular-phonecat) - 官方示例项目
-[ng-demos](https://github.com/johnpapa/ng-demos) - variety of angular demos
-[angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - All the source code for the AngularJS Up & Running Book for O'Reilly
-[sailng](https://github.com/ryancp/sailng) - Sails.js + Angular = Awesome
+[Angular土豆视屏教程](http://www.tudou.com/plcover/AURJrOM6ntc/)  
+[angular-phonecat](https://github.com/angular/angular-phonecat) - 官方示例项目  
+[ng-demos](https://github.com/johnpapa/ng-demos) - variety of angular demos  
+[angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - All the source code for the AngularJS Up & Running Book for O'Reilly  
 
 ## 基础项目(seed)
 [angular-seed](https://github.com/angular/angular-seed) - angular种子文件（基础结构）  
 [generator-angular](https://github.com/yeoman/generator-angular)  
 [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)  
-[angular-requirejs-seed](https://github.com/tnajdek/angular-requirejs-seed)
-[angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate)
+[angular-requirejs-seed](https://github.com/tnajdek/angular-requirejs-seed)  
+[angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate)  
 [angular-express-seed](https://github.com/btford/angular-express-seed)  
 [ng-boilerplate](https://github.com/ngbp/ngbp) - 成熟的web apps构建管理系统  
 [angular-kickstart](https://github.com/vesparny/angular-kickstart) - 基于 AngularJS，GulpJS 和 Bower 的完整可伸缩构建系统，能加快 AngularJS 应用的开发  
-[angular-app](https://github.com/angular-app/angular-app) - Reference application for AngularJS, CURD application demo
-[angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)
+[angular-app](https://github.com/angular-app/angular-app) - Reference application for AngularJS, CURD application demo  
+[sailng](https://github.com/ryancp/sailng) - Sails.js + Angular = Awesome  
+[angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)  
 
 ## 编码风格/设计模式/最佳实践 
 [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)  
-[AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)  
+[AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md) 
 [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
-[AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)
-[ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例
+[AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
 
 ## 组件库
 [Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap) 
 [angular-common](https://github.com/michaeljcalkins/angular-common)  
 [angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
+[ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例
 [textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!  
 [angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
 [angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
@@ -164,3 +170,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [ngDroplet](https://github.com/Wildhoney/ngDroplet)  
 [angular-parallax](https://github.com/oblador/angular-parallax)  
 [angular-media-player](https://github.com/mrgamer/angular-media-player)  
+[angular-busy](https://github.com/cgross/angular-busy) - Show busy/loading indicators on any element during $http requests (or any promise).  
+[angular-perfect-scrollbar](https://github.com/itsdrewmiller/angular-perfect-scrollbar) - small directive to allow the use of perfect-scrollbar  
+
