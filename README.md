@@ -102,11 +102,12 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [官方文档](https://docs.angularjs.org/api)  
 [官方指南](https://docs.angularjs.org/guide) - [中文版](http://docs.ngnice.com/guide)  
 [awesome-angularjs](https://github.com/gianarb/awesome-angularjs) - AngularJs 服务,指令,实用工具资源  
-[AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源 
+[AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源  
 [frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)  
 [angular-resources](https://github.com/distilledhype/angular-resources)  
 [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
-[ng-newsletter](http://www.ng-newsletter.com/)  
+[ng-newsletter](http://www.ng-newsletter.com/)   
+[angular-js.in](http://angular-js.in/) - A curated collection of angular directives  
 
 ## 电子书
 [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)  
@@ -140,12 +141,13 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md) 
 [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
 [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
+[mgechev/angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns) - This repository provides different look into AngularJS.
 
 ## 组件库
 [Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap) 
 [angular-common](https://github.com/michaeljcalkins/angular-common)  
 [angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
-[ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例
+[ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例 
 [textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!  
 [angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
 [angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
@@ -172,4 +174,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angular-media-player](https://github.com/mrgamer/angular-media-player)  
 [angular-busy](https://github.com/cgross/angular-busy) - Show busy/loading indicators on any element during $http requests (or any promise).  
 [angular-perfect-scrollbar](https://github.com/itsdrewmiller/angular-perfect-scrollbar) - small directive to allow the use of perfect-scrollbar  
-
+[angular-material-icons](https://github.com/klarsys/angular-material-icons) - AngularJS directive to use Material Design icons with custom fill-color and size.  
+[angular-sweetalert](https://github.com/leftstick/angular-sweetalert) - An angular directive which expose sweetalert in angular way  
+[angular-promise-buttons](https://github.com/johannesjo/angular-promise-buttons) - Chilled loading buttons for AngularJS
