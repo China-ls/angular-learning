@@ -97,10 +97,12 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [官方指南](https://docs.angularjs.org/guide) - [中文版](http://docs.ngnice.com/guide)
 [awesome-angularjs](https://github.com/gianarb/awesome-angularjs) - AngularJs 服务,指令,实用工具资源  
 [AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源  
-[frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)
-[angular-resources](https://github.com/distilledhype/angular-resources)
-[破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)
-[ng-newsletter](http://www.ng-newsletter.com/)
+[frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)  
+[angular-resources](https://github.com/distilledhype/angular-resources)  
+[破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
+[ng-newsletter.com](http://www.ng-newsletter.com/)   
+[ngmodules.org](http://ngmodules.org/)  
+[angular-js.in](http://angular-js.in/)  
 
 ## 电子书
 [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)  
@@ -121,8 +123,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angular-seed](https://github.com/angular/angular-seed) - angular种子文件（基础结构）  
 [generator-angular](https://github.com/yeoman/generator-angular)  
 [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)  
-[angular-requirejs-seed](https://github.com/tnajdek/angular-requirejs-seed)
-[angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate)
+[angular-requirejs-seed](https://github.com/tnajdek/angular-requirejs-seed)  
+[angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate)  
 [angular-express-seed](https://github.com/btford/angular-express-seed)  
 [ng-boilerplate](https://github.com/ngbp/ngbp) - 成熟的web apps构建管理系统  
 [angular-kickstart](https://github.com/vesparny/angular-kickstart) - 基于 AngularJS，GulpJS 和 Bower 的完整可伸缩构建系统，能加快 AngularJS 应用的开发  
@@ -133,34 +135,35 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)  
 [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)  
 [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
-[AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)
+[AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
 [ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例
 
 ## 组件库
-[Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap)
-[angular-common](https://github.com/michaeljcalkins/angular-common)
-[angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.
-[textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!
-[angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.
-[angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:
-[famous-angular](https://github.com/Famous/famous-angular) - Bring structure to your Famo.us apps with the power of AngularJS.
-[angular-hotkeys](https://github.com/chieffancypants/angular-hotkeys) - Configuration-centric keyboard shortcuts for your Angular apps.
-[angular-filter](https://github.com/a8m/angular-filter) - Bunch of useful filters for AngularJS (with no external dependencies!)
-[angular-moment](https://github.com/urish/angular-moment) - Moment.JS directives for Angular.JS (timeago and more)
-[angular-file-upload](https://github.com/nervgh/angular-file-upload) - Angular File Upload is a module for the AngularJS framework
-[mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3
-[ngProgress](https://github.com/VictorBjelkholm/ngProgress) - Angular provider for slim loading bar at the top of the page
-[ngFx](https://github.com/Hendrixer/ngFx) - Simple, Beautiful animation library for Angular
-[ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications
-[ngReact](https://github.com/davidchang/ngReact) - Use React Components in Angular
-[angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js
-[angular-schema-form](https://github.com/Textalk/angular-schema-form) - Generate forms from a JSON schema, with AngularJS!
-[angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS
-[forms-angular](https://github.com/forms-angular/forms-angular) - Probably the most opinionated framework in the world
-[angular-form-for](https://github.com/bvaughn/angular-form-for) - Set of Angular directives to simplify creating and validating HTML forms.
-[ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular
-[AngularAgility](https://github.com/AngularAgility/AngularAgility) - A set of useful Angular.js extensions implementing common UX patterns to improve productivity.
-[angular-datepicker](https://github.com/alongubkin/angular-datepicker)
-[ngDroplet](https://github.com/Wildhoney/ngDroplet)
-[angular-parallax](https://github.com/oblador/angular-parallax)
-[angular-media-player](https://github.com/mrgamer/angular-media-player)
+[Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap)  
+[angular-common](https://github.com/michaeljcalkins/angular-common)  
+[angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
+[textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!  
+[angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
+[angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
+[famous-angular](https://github.com/Famous/famous-angular) - Bring structure to your Famo.us apps with the power of AngularJS.  
+[angular-hotkeys](https://github.com/chieffancypants/angular-hotkeys) - Configuration-centric keyboard shortcuts for your Angular apps.  
+[angular-filter](https://github.com/a8m/angular-filter) - Bunch of useful filters for AngularJS (with no external dependencies!)  
+[angular-moment](https://github.com/urish/angular-moment) - Moment.JS directives for Angular.JS (timeago and more)  
+[angular-file-upload](https://github.com/nervgh/angular-file-upload) - Angular File Upload is a module for the AngularJS framework  
+[mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3  
+[ngProgress](https://github.com/VictorBjelkholm/ngProgress) - Angular provider for slim loading bar at the top of the page  
+[ngFx](https://github.com/Hendrixer/ngFx) - Simple, Beautiful animation library for Angular  
+[ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications  
+[ngReact](https://github.com/davidchang/ngReact) - Use React Components in Angular  
+[angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js  
+[angular-schema-form](https://github.com/Textalk/angular-schema-form) - Generate forms from a JSON schema, with AngularJS!  
+[angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS  
+[forms-angular](https://github.com/forms-angular/forms-angular) - Probably the most opinionated framework in the world  
+[angular-form-for](https://github.com/bvaughn/angular-form-for) - Set of Angular directives to simplify creating and validating HTML forms.  
+[ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular  
+[AngularAgility](https://github.com/AngularAgility/AngularAgility) - A set of useful Angular.js extensions implementing common UX patterns to improve productivity.  
+[angular-datepicker](https://github.com/alongubkin/angular-datepicker)  
+[ngDroplet](https://github.com/Wildhoney/ngDroplet)  
+[angular-parallax](https://github.com/oblador/angular-parallax)  
+[angular-media-player](https://github.com/mrgamer/angular-media-player)  
+[gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache)  
