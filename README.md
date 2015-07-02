@@ -27,9 +27,11 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + 初始化(Bootstrap)
   + 数据绑定(Data Binding)
   + 作用域(Scopes)
+    + [理解AngularJS的作用域Scope](https://github.com/zensh/jsgen/blob/master/static/src/md/UnderstandingScopes.md)  
   + 编译(Compiler)
   + 表达式(Expression)
   + 指令(Directive)
+    + [理解AngularJS的指令Directieve](docs/understandingDirectives.md)  
   + 视图(View)和路由(Route)
     + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)
   + 过滤器(Filter)
@@ -105,6 +107,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源  
 [frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)  
 [angular-resources](https://github.com/distilledhype/angular-resources)  
+[angular-education](https://github.com/timjacobi/angular-education) - A collection of useful resources to learn and improve your AngularJS skills.  
+[stackoverflow上的angularjs问题](http://stackoverflow.com/questions/tagged/angularjs)  
 [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
 [ng-newsletter.com](http://www.ng-newsletter.com/)   
 [ngmodules.org](http://ngmodules.org/)  
@@ -113,17 +117,21 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ## 电子书
 [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)  
-[restangular](http://wohugb.gitbooks.io/restangular/content/) 
+[restangular](http://wohugb.gitbooks.io/restangular/content/)  
+[Web Component Architecture & Development with AngularJS](https://leanpub.com/web-component-development-with-angularjs/read)  
 
 ## 教程
 [AngularJS学习笔记](http://www.zouyesheng.com/angular.html)  
 [AngularJS体验式编程系列文章](http://blog.fens.me/series-angular/)  
+[angularjshub.com](http://www.angularjshub.com/) - Angularjs示例    
+[codecademy.com Angular教程](http://www.codecademy.com/learn/learn-angularjs) - Learn AngularJS  
 [A Better Way to Learn AngularJS](https://thinkster.io/angulartutorial/a-better-way-to-learn-angularjs/)  
 [使用AngularJS构建大型Web应用](http://www.infoq.com/cn/news/2013/02/angular-web-app)  
 [Angular土豆视屏教程](http://www.tudou.com/plcover/AURJrOM6ntc/)  
 [angular-phonecat](https://github.com/angular/angular-phonecat) - 官方示例项目  
 [ng-demos](https://github.com/johnpapa/ng-demos) - variety of angular demos  
 [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - All the source code for the AngularJS Up & Running Book for O'Reilly  
+[AngularJS in 60 Minutes](http://fastandfluid.com/publicdownloads/AngularJSIn60MinutesIsh_DanWahlin_May2013.pdf)  
 
 ## 基础项目(seed)
 [angular-seed](https://github.com/angular/angular-seed) - angular种子文件（基础结构）  
