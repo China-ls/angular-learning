@@ -3,26 +3,23 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 + 文档
   + [概述](#概述)
-  + [核心概念](#核心概念)
-    + [模板](#模板)
-    + [程序结构](#程序结构)
-+ 资源
-  + [资源](#资源)
+  + [核心概念](#核心概念)    
+  + [程序结构](#程序结构)  
++ [资源](#资源)  
   + [电子书](#电子书)
   + [教程](#教程)
   + [基础项目](#基础项目(seed))
   + [编码风格/设计模式/最佳实践](#编码风格/设计模式/最佳实践)
   + [组件库](#组件库)
+  + [Angular Gulp插件](#Angular Gulp插件)
+  + [源码解析](#源码解析)  
+  + [更多AngularJs资源](#更多AngularJs资源)
 
 # 概述
 
-[什么是angularJs?]
+什么是angularJs?
 
-# 核心概念
-
-## 模板
-
-  *把通过数据填充页面模板的工作从后端移到了前端，使要动态更新的页面有了更好的代码结构*
+## 核心概念
 
   + 初始化(Bootstrap)
   + 数据绑定(Data Binding)
@@ -33,7 +30,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + 指令(Directive)
     + [理解AngularJS的指令Directieve](docs/understandingDirectives.md)  
   + 视图(View)和路由(Route)
-    + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)
+    + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)  
   + 过滤器(Filter)
   + 服务/供应商(Services/Providers)
   + 表单(Form) 和 AngularJS的表单概念
@@ -52,7 +49,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + [angular-restmod](https://github.com/platanus/angular-restmod) - Rails inspired REST-API ORM for Angular  
   + [以更RESTful的方式使用ngResource](http://my.oschina.net/buwei/blog/185082)  
 + 路由
-  + ui-router
+  + ui-router  
+    [Angular路由深入浅出](http://div.io/topic/1096)  
 + 常量
   + [grunt-ng-constant](https://github.com/werk85/grunt-ng-constant)
 + 承诺/递延(Promises/Deferred)
@@ -97,7 +95,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ----------------
 
-## 资源
+# 资源
 [AngularJs1.x Github](https://github.com/angular/angular.js)  
 [AngularJs2.x Github](https://github.com/angular/angular)  
 [AngularJS中文社区](http://angularjs.cn/)  
@@ -119,6 +117,9 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)  
 [restangular](http://wohugb.gitbooks.io/restangular/content/)  
 [Web Component Architecture & Development with AngularJS](https://leanpub.com/web-component-development-with-angularjs/read)  
+[Practical AngularJS](https://leanpub.com/Practical_AngularJS/read)  
+[Pro AngularJs](http://pan.baidu.com/s/1mglBAyO)  
+[AngularJs By Example](http://pan.baidu.com/s/19CAyM)  
 
 ## 教程
 [AngularJS学习笔记](http://www.zouyesheng.com/angular.html)  
@@ -133,7 +134,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - All the source code for the AngularJS Up & Running Book for O'Reilly  
 [AngularJS in 60 Minutes](http://fastandfluid.com/publicdownloads/AngularJSIn60MinutesIsh_DanWahlin_May2013.pdf)  
 
-## 基础项目(seed)
+## 基础项目(seed) 
+[generator-hottowel](https://github.com/johnpapa/generator-hottowel) - Yo generator that creates an Angular app via HotTowel    
 [angular-seed](https://github.com/angular/angular-seed) - angular种子文件（基础结构）  
 [generator-angular](https://github.com/yeoman/generator-angular)  
 [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)  
@@ -145,47 +147,81 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angular-app](https://github.com/angular-app/angular-app) - Reference application for AngularJS, CURD application demo  
 [sailng](https://github.com/ryancp/sailng) - Sails.js + Angular = Awesome  
 [angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)  
+[ngbp](https://github.com/ngbp/ngbp) - A sophisticated build management system for web apps (formerly ng-boilerplate) 
 
 ## 编码风格/设计模式/最佳实践 
 [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)  
 [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md) 
 [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
 [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
-[mgechev/angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns) - This repository provides different look into AngularJS.
+[mgechev/angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns) - This repository provides different look into AngularJS.  
+[recipes-with-angular-js](https://github.com/fdietz/recipes-with-angular-js) - AngularJs技巧  
 
 ## 组件库
+*AngularJs扩展*  
 [Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap) 
-[angular-common](https://github.com/michaeljcalkins/angular-common)  
+[mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3  
 [angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
 [ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例  
-[textAngular](https://github.com/fraywing/textAngular) - A radically powerful Text-Editor/Wysiwyg editor for Angular.js!  
-[angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
-[angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
 [famous-angular](https://github.com/Famous/famous-angular) - Bring structure to your Famo.us apps with the power of AngularJS.  
+[angular-moment](https://github.com/urish/angular-moment) - Moment.JS Angular.JS 指令 (timeago and more)  
 [angular-hotkeys](https://github.com/chieffancypants/angular-hotkeys) - Configuration-centric keyboard shortcuts for your Angular apps.  
+[angular-common](https://github.com/michaeljcalkins/angular-common)  
 [angular-filter](https://github.com/a8m/angular-filter) - Bunch of useful filters for AngularJS (with no external dependencies!)  
-[angular-moment](https://github.com/urish/angular-moment) - Moment.JS directives for Angular.JS (timeago and more)  
+[ngReact](https://github.com/davidchang/ngReact) - 在Angular中使用React  
+[AngularAgility](https://github.com/AngularAgility/AngularAgility) - A set of useful Angular.js extensions implementing common UX patterns to improve productivity.  
+
+*Table / Grid*  
+[Smart-Table](https://github.com/lorenzofox3/Smart-Table) - bootstrap风格的table/grid    
+
+*表单相关*  
+[angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS  
+[angular-form-for](https://github.com/bvaughn/angular-form-for) - 简单地创建和验证HTML表单的Angular指令集。  
+[angular-schema-form](https://github.com/Textalk/angular-schema-form) - 用JSON schema生成Form表单  
+[forms-angular](https://github.com/forms-angular/forms-angular) - Probably the most opinionated framework in the world  
+
+*文件上传*  
 [ng-file-upload](https://github.com/danialfarid/ng-file-upload) - 轻量级的 AngularJS 文件上传工具，为不支持浏览器的 FileAPI polyfill 设计，使用 HTML5 直接进行文件上传    
 [angular-file-upload](https://github.com/nervgh/angular-file-upload) - Angular File Upload is a module for the AngularJS framework  
-[mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3  
-[ngProgress](https://github.com/VictorBjelkholm/ngProgress) - Angular provider for slim loading bar at the top of the page  
-[ngFx](https://github.com/Hendrixer/ngFx) - Simple, Beautiful animation library for Angular  
-[ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications  
-[ngReact](https://github.com/davidchang/ngReact) - Use React Components in Angular  
-[angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js  
-[angular-schema-form](https://github.com/Textalk/angular-schema-form) - Generate forms from a JSON schema, with AngularJS!  
-[angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS  
-[forms-angular](https://github.com/forms-angular/forms-angular) - Probably the most opinionated framework in the world  
-[angular-form-for](https://github.com/bvaughn/angular-form-for) - Set of Angular directives to simplify creating and validating HTML forms.  
+[ngDroplet](https://github.com/Wildhoney/ngDroplet) - 可拖拽的HTML5 文件上传, 可预览图片/文件   
+
+*按钮*  
+[angular-promise-buttons](https://github.com/johannesjo/angular-promise-buttons) - 带加载状态的按钮   
+
+*模态框、消息提示* 
+[ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications   
+[angular-sweetalert](https://github.com/leftstick/angular-sweetalert) - 通过angular的方式暴露的sweetalert angular 指令  
 [ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular  
-[AngularAgility](https://github.com/AngularAgility/AngularAgility) - A set of useful Angular.js extensions implementing common UX patterns to improve productivity.  
-[angular-datepicker](https://github.com/alongubkin/angular-datepicker)  
-[ngDroplet](https://github.com/Wildhoney/ngDroplet)  
-[angular-parallax](https://github.com/oblador/angular-parallax)  
-[angular-media-player](https://github.com/mrgamer/angular-media-player)  
-[gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache)  
-[angular-busy](https://github.com/cgross/angular-busy) - Show busy/loading indicators on any element during $http requests (or any promise).  
-[angular-perfect-scrollbar](https://github.com/itsdrewmiller/angular-perfect-scrollbar) - small directive to allow the use of perfect-scrollbar  
-[angular-material-icons](https://github.com/klarsys/angular-material-icons) - AngularJS directive to use Material Design icons with custom fill-color and size.  
-[angular-sweetalert](https://github.com/leftstick/angular-sweetalert) - An angular directive which expose sweetalert in angular way  
-[angular-promise-buttons](https://github.com/johannesjo/angular-promise-buttons) - Chilled loading buttons for AngularJS  
+
+*Loading*  
+[ngProgress](https://github.com/VictorBjelkholm/ngProgress) - 页面顶部的进度条 Angular provider  
+[angular-busy](https://github.com/cgross/angular-busy) - 当$http请求时，在任意元素(或promise中)上显示 ```正在处理/加载``` 指示器。   
+[ng-notify](https://github.com/matowens/ng-notify) - 简单、轻量级模块A simple, lightweight module for displaying notifications in your AngularJS app.  
+
+*Icon*  
+[angular-material-icons](https://github.com/klarsys/angular-material-icons) - Material 风格的自定义颜色和大小的图标的 AngularJS directive。    
+
+*UI相关*  
+[angular-perfect-scrollbar](https://github.com/itsdrewmiller/angular-perfect-scrollbar) - 美化滚动条的小指令(封装perfect-scrollbar jQuery插件)  
+[angular-parallax](https://github.com/oblador/angular-parallax) - 轻量、高性能的视差滚动  
+[ngFx](https://github.com/Hendrixer/ngFx) - 简单, 漂亮的Angular动画库  
+
+*Widgets*  
+[angular-datepicker](https://github.com/alongubkin/angular-datepicker) - 日期/时间选择   
+[angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
+[angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
+[angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js  
+[textAngular](https://github.com/fraywing/textAngular) - 文本编辑器  
+
+*多媒体*  
+[angular-media-player](https://github.com/mrgamer/angular-media-player) -  包装&lt;audio&gt; 或 &lt;video&gt; 标签的指令, 暴露方法和属性来操作你的播放器  
+
+## Angular Gulp插件  
+[gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) - 在$templateCache中串联和注册AngularJs模板  
+
+## 源码解析  
+[ui.router源码解析](http://www.html-js.com/article/Front-end-source-code-analysis-original-uirouter-source-code-analysis)  
+
+## 更多AngularJs资源  
+[awesome-angularjs](https://github.com/gianarb/awesome-angularjs)  
+

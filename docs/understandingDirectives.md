@@ -17,8 +17,6 @@
 myApp.directive('uiJq', function InjectingFunction(){
 
   // === InjectingFunction === //
-  // Logic is executed 0 or 1 times per app (depending on if directive is used).
-  // Useful for bootstrap and global configuration
   // 理论上在每个应用中会被执行0或1次（取决于指令是否被使用）。
   // 对于程序引导和全局配置很有用。
 
@@ -70,7 +68,7 @@ link: {
 * 嵌套指令。如果每个child有一个指令，使用 `require: '^parentDirective'` 就可以访问 `parentDirective` 控制器。
   * 如果你在 `parentDirective` 上使用 `PreLinkingFunction()` , 你可以实例如这个容器为空，然后在每次使用它时更新
 
-**这 _不_ 适用于异步更改，像通过AJAX加载 `$scope` **
+**这 _不_ 适用于异步更改，像通过AJAX加载 `$scope`**
 
 如果你需要等待 `$scope` 中的数据加载完毕，可以尝使用 [ng-if](http://docs.angularjs.org/api/ng/directive/ngIf) 去延迟DOM块的linking。
 
@@ -145,7 +143,7 @@ myApp.directive('b', function(){
 })
 ```
 ### 指令配置指南
-有时候，你想创建一个具有不同的配置选项（如templateUrl）的新名称指令的特殊版本，同时保留原有的指令可用。已注册的任何指令，使名称为“指令”附加到它提供的特殊服务。如果您注册 `<my-dir>`（名称为 'myDir'），它会创建一个名为'myDirDirective'服务。如果你是注入到一个新的指令提供函数，你会得到指令配置的数组（通常按优先顺序）。选择你想要的（通常是第一个），对它进行浅拷贝，修改配置，并返回。
+有时候，你想创建一个具有不同的配置选项（如templateUrl）的新名称指令的特殊版本，同时保留原有的指令可用。已注册的任何指令，使名称为“指令”附加到它提供的特殊服务。如果你注册 `<my-dir>`（名称为 'myDir'），它会创建一个名为'myDirDirective'服务。如果你是注入到一个新的指令提供函数，你会得到指令配置的数组（通常按优先顺序）。选择你想要的（通常是第一个），对它进行浅拷贝，修改配置，并返回。
 
 ```js
 // <div b></div>
