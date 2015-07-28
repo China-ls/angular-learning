@@ -1,5 +1,5 @@
 
-> 2015年6月27日， [Carson](https://github.com/huguangju) 译
+> 2015年6月27日， [huguangju](https://github.com/huguangju) 译
 > 
 > 译文：理解AngularJS的指令Directieve
 > 
