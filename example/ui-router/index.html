@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="uiRouterDemo">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Angular ui-router Demo</title>
+  <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+  <script src="//cdn.bootcss.com/angular.js/1.4.3/angular.js"></script>
+  <script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+  <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+  <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="//cdn.bootcss.com/angular-ui-bootstrap/0.13.1/ui-bootstrap-tpls.js"></script>
+
+  <script src="app.js"></script>
+  <script src="./account/account.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home">Home</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown" ng-class="{active: $state.includes('account.list')}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+               aria-expanded="false">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li ng-class="{active: $state.includes('account.list')}"><a ui-sref="account.list">Account</a></li>
+              <li><a href="#">Another action</a></li>
+            </ul>
+          </li>
+          <li ng-class="{active: $state.includes('about')}"><a ui-sref="about">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <section ui-view class="container"></section>
+
+  <section>
+    <hr>
+    <pre>
+      <!-- Here's some values to keep an eye on in the sample in order to understand $state and $stateParams -->
+      $state = {{$state.current.name}}
+      $stateParams = {{$stateParams}}
+      $state full url = {{ $state.$current.url.source }}
+      <!-- $state.$current is not a public api, we are using it to
+           display the full url for learning purposes-->
+    </pre>
+  </section>
+</body>
+</html>

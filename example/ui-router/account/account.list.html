@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>account</th>
+      <th>operate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="person in persons">
+      <td >{{person.name}}</td>
+      <td >{{person.no}}</td>
+      <td><a ui-sref="account.items({personId: person.personId})">账号信息</a></td>
+    </tr>
+  </tbody>
+</table>
