@@ -9,18 +9,13 @@
 ##### 这个指南会让你深入了解UI-Router的组件和选项的方方面面。如果你仅仅需要一个快速参考指南，可以访问 [API Reference](http://angular-ui.github.io/ui-router/site)
 
 ## 状态管理
-
-The new $stateProvider works similar to Angular's v1 router, but it focuses purely on state. 
-* A state corresponds to a "place" in the application in terms of the overall UI and navigation. 
-* A state describes (via the controller / template / view properties) what the UI looks like and does at that place. 
-* States often have things in common, and the primary way of factoring out these commonalities in this model is via the state hierarchy, i.e. parent/child states aka nested states. 
 新的$stateProvider服务类似于Angular第一版的router，但是它仅专注于状态。
 * 就整体的UI和导航而言，一个状态(```state```)相当于应用中的一个 "位置" 
 * 一个状态描述 (通过 控制器 / 模版 / 视图属性) UI是怎样的外观和位于何处. 
-* 状态通常 States often have things in common, 并and the primary way of factoring out these commonalities in this model is via the state hierarchy, i.e. parent/child states aka nested states. 
+* States often have things in common, and the primary way of factoring out these commonalities in this model is via the state hierarchy, i.e. parent/child states aka nested states. 
 
-### The simplest form of state
-A state in its simplest form can be added like this (typically within module.config):
+### 状态最简单的形式
+状态最简单的形式就是它可以像这样被添加 (通常在module.config):
 ```html
 <!-- in index.html -->
 <body ng-controller="MainCtrl">
@@ -28,44 +23,44 @@ A state in its simplest form can be added like this (typically within module.con
 </body>
 ```
 ```javascript
-// in app-states.js (or whatever you want to name it)
+// 在 app-states.js （或者起其它的名字）
 $stateProvider.state('contacts', {
   template: '<h1>My Contacts</h1>'
 })
 ```
 
-#### Where does the template get inserted?
-When a state is activated, its templates are automatically inserted into the `ui-view` of its parent state's template. If it's a top-level state—which 'contacts' is because it has no parent state–then its parent template is index.html.
+#### 模板从哪里获取插入的内容? 
+当一个状态被激活, 它的模板被自动插入到它的父状态的模板中的 `ui-view` 。如果它提一个顶级状态, 就像 'contacts', 因为它没有父状态, 那么它的父模板就是index.html。  
 
-Right now, the 'contacts' state won't ever be activated. So let's see how we can activate a state. 
+现在, contacts' 状态永远不会被激活。我们来看看如何激活一个状态。
 
-#### Activating a state
-There are three main ways to activate a state:
+#### 激活状态
+激活状态有3种主要的方式:
 
-1. Call `$state.go()`. High-level convenience method. [Learn More](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#stategoto--toparams--options)
-2. Click a link containing the `ui-sref` directive. [Learn More](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#ui-sref)
-3. Navigate to the `url` associated with the state. [[Learn More|URL Routing]].
+1. 调用 `$state.go()` 。高级便利方法。[了解更多](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#stategoto--toparams--options)
+2. 点击一个包含 `ui-sref` 指令的链接。 [了解更多](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#ui-sref)
+3. 导航到 `url`关联的状态。 [[了解更多|URL Routing]].
 
 ***
 
-### Templates
+### 模板
 
-There are several methods for configuring a state's template.
+配置状态模板有几种方式。
 
-As seen above, the simplest way to set your template is via the `template` config property.
+正如上边看到的，设置模板最简单的方式就是通过 `template` 配置属性。
 ```javascript
 $stateProvider.state('contacts', {
   template: '<h1>My Contacts</h1>'
 })
 ```
 
-Instead of writing the template inline you can load a partial. (This is probably how you'll set templates most of the time.)
+除了写行内模板，也可以加载页面片段。（大多数时间会用这种方式设置模板。）
 ```javascript
 $stateProvider.state('contacts', {
   templateUrl: 'contacts.html'
 })
 ```
-`templateUrl` can also be a function that returns a url. It takes one preset parameter, stateParams, which is not injected. 
+`templateUrl` 也可以是一个返回url的函数。它可以获取一个预设置的参数stateParams（非注入的）。
 ```javascript
 $stateProvider.state('contacts', {
   templateUrl: function ($stateParams){
@@ -73,7 +68,7 @@ $stateProvider.state('contacts', {
   }
 })
 ```
-Or you can use a template provider function which can be injected, has access to locals, and must return template HTML, like this:
+或者你可以像这样使用一个模板提供商函数，可提供注入以供函数内部使用，并且必须返回HTML模板：
 ```javascript
 $stateProvider.state('contacts', {
   templateProvider: function ($timeout, $stateParams) {
@@ -83,7 +78,7 @@ $stateProvider.state('contacts', {
   }
 })
 ```
-If you'd like your `<ui-view>` to have some default content before it's populated by a state activation, you can do that as well. The contents will be replaced as soon as a state is activated and populates the ui-view with a template.
+如果你想在 `<ui-view>` 被激活的状态填充前放一些默认内容，你也可以那么做。一旦状态被激活默认内容就会被替换，并填充以模板。
 ```html
 <body>
     <ui-view>
@@ -93,9 +88,9 @@ If you'd like your `<ui-view>` to have some default content before it's populate
 ```
 
 ### Controllers
-You can assign a controller to your template. **Warning:** The controller will **not** be instantiated if template is not defined. 
+你可以给模板分配一个控制器。**注意:** 如果模板没定义，控制器不会被实例化。
 
-You set your `controller` like this:
+你可以这样设置 `controller` ：
 ```javascript
 $stateProvider.state('contacts', {
   template: '<h1>{{title}}</h1>',
@@ -105,7 +100,7 @@ $stateProvider.state('contacts', {
 })
 ```
 
-Or if you already have a `controller` defined on the module, like this:
+或者，你已经在本模块定义了一个 `controller` ，就这样用：
 ```javascript
 $stateProvider.state('contacts', {
   template: ...,
@@ -113,7 +108,7 @@ $stateProvider.state('contacts', {
 })
 ```
 
-Alternatively using the controllerAs syntax the above become:
+或者把上边的代码用 `controllerAs` 语法来写：
 ```javascript
 $stateProvider.state('contacts', {
   template: '<h1>{{contact.title}}</h1>',
@@ -123,7 +118,7 @@ $stateProvider.state('contacts', {
   controllerAs: 'contact'
 })
 ```
-and
+和
 
 ```javascript
 $stateProvider.state('contacts', {
@@ -132,7 +127,7 @@ $stateProvider.state('contacts', {
 })
 ```
 
-Or for more advanced needs you can use the `controllerProvider` to dynamically return a controller function or string for you:
+另外，在有更高需求的情况下，可以使用 `controllerProvider` 来动态返回一个控制器或字符串：
 ```javascript
 $stateProvider.state('contacts', {
   template: ...,
@@ -143,48 +138,42 @@ $stateProvider.state('contacts', {
 })
 ```
 
-Controllers can use the $scope.$on() method to listen for events fired by state transitions.
+控制器可以用$scope.$on()方法监听状态改变触发的事件。
 
-Controllers are instantiated on an as-needed basis, when their corresponding scopes are created, i.e. when the user manually navigates to a state via a URL, $stateProvider will load the correct template into the view, then bind the controller to the template's scope.
+控制器在需的时候被实例化，即当它对应的作用域创建的时候。当用户通过URL手动导航动一个状态，stateProvider会加载正确的模板到视图中，然后绑定控制器到模板的作用域。
 
 #### Resolve
-You can use `resolve` to provide your controller with content or data that is custom to the state. `resolve` is an optional map of dependencies which should be injected into the controller. 
+你可以用`resolve`为控制器提供定制的内容或数据到状态。`resolve`is an optional map of dependencies，可以被注入到控制器中。
 
-If any of these dependencies are promises, they will be resolved and converted to a value **before** the controller is instantiated and the $stateChangeSuccess event is fired. 
+任何是promise的依赖，会在控制器被实例化**之前**，stateChangeSuccess事件被触发后，被解析且转换成一个值。
 
-The `resolve` property is a map object. The map object contains key/value pairs of:
-* key – {string}: a name of a dependency to be injected into the controller.
-* factory - {string|function}: 
-    * If string, then it is an alias for a service. 
-    * Otherwise if function, then it is injected and the return value is treated as the dependency. If the result is a promise, it is resolved before the controller is instantiated and its value is injected into the controller.
+`resolve`属性是一个map对象，包含这些键值对：
+* key – {字符串}: 被注入到控制器中的一个依赖的名字。
+* factory - {字符串|函数}: 
+    * 如果是字符串，它就是一个服务的别名. 
+    * 否则如果它是函数，它就会被注入并返回一个值当作依赖。如果结果是promise，它会在控制器被实例化之前被解析并返回一个值注入到控制器中。
 
-**Examples:**
+**示例:**
 
-Each of the objects in `resolve` below must be resolved (via `deferred.resolve()` if they are a promise) before the `controller` is instantiated. Notice how each resolve object is injected as a parameter into the controller.
+下面`resolve`中的每个对象必须在`controller`被实例化之前被解析(如果是promise就通过 `deferred.resolve()`解析)。注意每个解析对象是如何作为参数注入到控制器中的。
 
 ```javascript
 $stateProvider.state('myState', {
       resolve:{
 
-         // Example using function with simple return value.
-         // Since it's not a promise, it resolves immediately.
+         // 返回简单值的函数的例子。因为它不是promise，所以会立刻解析。
          simpleObj:  function(){
             return {value: 'simple!'};
          },
 
-         // Example using function with returned promise.
-         // This is the typical use case of resolve.
-         // You need to inject any services that you are
-         // using, e.g. $http in this example
+         // 返回promise的函数的例子。这是解析的典型用例。你可以注入任何你需要使用的服务，例如本例中的$http
          promiseObj:  function($http){
             // $http returns a promise for the url data
             return $http({method: 'GET', url: '/someUrl'});
          },
 
-         // Another promise example. If you need to do some 
-         // processing of the result, use .then, and your 
-         // promise is chained in for free. This is another
-         // typical use case of resolve.
+         // 另一个promise的例子。如果你需要对结果做一些处理，使用.then，并且你的promise可以随意链式调用。
+         // 是一另一个解析的典型用例。
          promiseObj2:  function($http){
             return $http({method: 'GET', url: '/someUrl'})
                .then (function (data) {
@@ -192,25 +181,20 @@ $stateProvider.state('myState', {
                });
          },        
 
-         // Example using a service by name as string.
-         // This would look for a 'translations' service
-         // within the module and return it.
-         // Note: The service could return a promise and
-         // it would work just like the example above
+         // 把名称作为字符串使用服务的例子。
+         // 这会在模块内查找一个叫做'translations'的服务并返回它。
+         // 注意：此服务会返回一个promise并会像上边的例子一样工作
          translations: "translations",
 
-         // Example showing injection of service into
-         // resolve function. Service then returns a
-         // promise. Tip: Inject $stateParams to get
-         // access to url parameters.
+         // 展示服务注入到解析函数的例子。服务会返回一个promise。
+         // 提示：注入$stateParams以获取url参数
          translations2: function(translations, $stateParams){
-             // Assume that getLang is a service method
-             // that uses $http to fetch some translations.
-             // Also assume our url was "/:lang/home".
+             // 假设getLang是一个服务的方法，通过$http获取翻译。
+             // 同时假设我们的url是"/:lang/home"。
              return translations.getLang($stateParams.lang);
          },
 
-         // Example showing returning of custom made promise
+         // 展示返回自定义promise的例子
          greeting: function($q, $timeout){
              var deferred = $q.defer();
              $timeout(function() {
@@ -219,16 +203,14 @@ $stateProvider.state('myState', {
              return deferred.promise;
          }
       },
-
-      // The controller waits for every one of the above items to be
-      // completely resolved before instantiation. For example, the
-      // controller will not instantiate until promiseObj's promise has 
-      // been resolved. Then those objects are injected into the controller
-      // and available for use.  
+ 
+      // 控制器实例化之前会等上边每一项都解析完成。
+      // 例如，控制器不会被实例化，除非promiseObj的promise已经被解析
+      // 然后那些对象被注入到控制器中以供使用。
       controller: function($scope, simpleObj, promiseObj, promiseObj2, translations, translations2, greeting){
           $scope.simple = simpleObj.value;
 
-          // You can be sure that promiseObj is ready to use!
+          // 可以确定promiseObj已经可以愉快地使用了！
           $scope.items = promiseObj.data.items;
           $scope.items = promiseObj2.items;
 
@@ -240,12 +222,12 @@ $stateProvider.state('myState', {
    })
 ```
 
-[Learn more](https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views#inherited-resolved-dependencies) about how resolved dependencies are inherited down to child states.
+[了解更多](https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views#inherited-resolved-dependencies) about how resolved dependencies are inherited down to child states.
 
-#### Attach Custom Data to State Objects
-You can attach custom data to the state object (we recommend using a `data` property to avoid conflicts). 
+#### 在状态对象附带自定义数据
+你可以附带自定义数据到状态对象（我们建议使用`data`属性以避免冲突）。
 ```javascript
-// Example shows an object-based state and a string-based state
+// 展示一个基于对象状态和基于字符串状态的例子
 var contacts = { 
     name: 'contacts',
     templateUrl: 'contacts.html',
@@ -264,7 +246,7 @@ $stateProvider
     } 
   })
 ```
-With the above example states you could access the data like this:
+在上面的例子中的状态你可以像下边这样访问数据：
 ```javascript
 function Ctrl($state){
     console.log($state.current.data.customData1) // outputs 5;
@@ -272,10 +254,10 @@ function Ctrl($state){
 }
 ```
 
-[Learn more](https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views#inherited-custom-data) about how custom data properties are inherited down to child states.
+[了解更多](https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views#inherited-custom-data) about how custom data properties are inherited down to child states.
 
-### onEnter and onExit callbacks
-There are also optional 'onEnter' and 'onExit' callbacks that get called when a state becomes active and inactive respectively. The callbacks also have access to all the resolved dependencies.
+### onEnter 和 onExit 回调
+还有'onEnter' 和 'onExit'两个回调，当状态分别变成激活和休眠时被调用。这两个回调也可以访问所有已解析的依赖。
 ```javascript
 $stateProvider.state("contacts", {
   template: '<h1>{{title}}</h1>',
@@ -292,16 +274,16 @@ $stateProvider.state("contacts", {
 })
 ```
 
-### State Change Events
+### 状态改变事件
 
-All these events are fired at the `$rootScope` level.
+所有的事件在`$rootScope`级别被触发。
 
-* **$stateChangeStart** - fired when the transition **begins**.
+* **$stateChangeStart** - **开始**转变时触发.
 ```javascript
 $rootScope.$on('$stateChangeStart', 
 function(event, toState, toParams, fromState, fromParams){ ... })
 ```
-**Note:** Use event.preventDefault() to prevent the transition from happening.
+**注意:** 用 event.preventDefault() 来阻止转变的发生。
 ```javascript
 $rootScope.$on('$stateChangeStart', 
 function(event, toState, toParams, fromState, fromParams){ 
@@ -310,13 +292,13 @@ function(event, toState, toParams, fromState, fromParams){
     // a 'transition prevented' error
 })
 ```
-* **$stateNotFound** - `v0.3.0` - fired when a requested state **cannot be found** using the provided state name during transition. The event is broadcast allowing any handlers a single chance to deal with the error (usually by lazy-loading the unfound state). A special `unfoundState` object is passed to the listener handler, you can see its three properties in the example. Use `event.preventDefault()` to abort the transition (transitionTo() promise will be rejected with a 'transition aborted' error). For a more in-depth example on lazy loading states, see [How To: Lazy load states](https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-lazy-load-states)
+* **$stateNotFound** - `v0.3.0` - 当在转换期间用提供的状态名请求状态**没有找到**时触发。The event is broadcast allowing any handlers a single chance to deal with the error (usually by lazy-loading the unfound state). 一个特殊的 `unfoundState` 对象会被传入监听处理器，可以在下面的例子中看见它的3个属性。 用 `event.preventDefault()` 可以中断转换 (transitionTo() promise 会不接受 'transition aborted' 错误). 了解更多深入的延迟加载的例子，查看 [How To: Lazy load states](https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-lazy-load-states)
 
 ```javascript
-// somewhere, assume lazy.state has not been defined
+// 假设lazy.state没有在某个地方被定义
 $state.go("lazy.state", {a:1, b:2}, {inherit:false});
 
-// somewhere else
+// 在某处使用
 $rootScope.$on('$stateNotFound', 
 function(event, unfoundState, fromState, fromParams){ 
     console.log(unfoundState.to); // "lazy.state"
@@ -324,33 +306,32 @@ function(event, unfoundState, fromState, fromParams){
     console.log(unfoundState.options); // {inherit:false} + default options
 })
 ```
-* **$stateChangeSuccess** - fired once the state transition is **complete**. 
+* **$stateChangeSuccess** - 一旦状态转换**完成**时触发。
 ```javascript
 $rootScope.$on('$stateChangeSuccess', 
 function(event, toState, toParams, fromState, fromParams){ ... })
 ```
-* **$stateChangeError** - fired when an **error occurs** during transition. It's important to note that if you have any errors in your `resolve` functions (javascript errors, non-existent services, etc) they will not throw traditionally. You must listen for this $stateChangeError event to catch ALL errors. Use `event.preventDefault()` to prevent the $UrlRouter from reverting the URL to the previous valid location (in case of a URL navigation).
+* **$stateChangeError** - 当在转换期间**发生错误**时触发。 需要特别注意的是，如果在`resolve`函数中发生了任何错误（javascript错误，服务不存在，等等），不会以传统的方式抛出错误。你只有监听$stateChangeError事件来捕获所有错误。 Use `event.preventDefault()` to prevent the $UrlRouter from reverting the URL to the previous valid location (in case of a URL navigation).
 ```javascript
 $rootScope.$on('$stateChangeError', 
 function(event, toState, toParams, fromState, fromParams, error){ ... })
 ```
 
-### View Load Events
+### 视图加载事件
 
-* **$viewContentLoading** - fired once the view **begins** loading, **before** the DOM is rendered. The '$rootScope' broadcasts the event.
+* **$viewContentLoading** - 一旦视图**开始**加载时, DOM被渲染**之前**触发。'$rootScope' 来广播这个事件。
 ```javascript
 $rootScope.$on('$viewContentLoading', 
 function(event, viewConfig){ 
-    // Access to all the view config properties.
-    // and one special property 'targetView'
-    // viewConfig.targetView 
+    // 访问所有的视图配置属性。
+    // 还有一个特殊的属性 'targeView'， viewConfig.targetView 
 });
 ```
 
-* **$viewContentLoaded** - fired once the view is **loaded**, **after** the DOM is rendered. The '$scope' of the view emits the event.
+* **$viewContentLoaded** - 一旦视图**加载完成**, DOM渲染完成**之后**触。视图的'$scope'发送事件。
 ```javascript
 $scope.$on('$viewContentLoaded', 
 function(event){ ... });
 ```
 
-[[Next (Nested States & Nested Views) ►|Nested States and Nested Views]]
+[[下一篇 (嵌套状态和嵌套视图) ►|Nested States and Nested Views]]
