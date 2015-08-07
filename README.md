@@ -16,8 +16,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + [更多AngularJs资源](#更多AngularJs资源)
 
 # 概述
-
-什么是angularJs?
+ 
+[有jQuery背景的开发者如何建立起AngularJS的思维模式?](http://www.infoq.com/cn/news/2013/11/how-to-think-angularjs)  
 
 ## 核心概念
 
@@ -31,6 +31,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
     + [理解AngularJS的指令Directieve](docs/understandingDirectives.md)  
   + 视图(View)和路由(Route)
     + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)  
+    + [ui-router]  
+      + [嵌套状态和嵌套视图](docs/ui-router/README.md)  
   + 过滤器(Filter)
   + 服务/供应商(Services/Providers)
   + 表单(Form) 和 AngularJS的表单概念
@@ -59,6 +61,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + 承诺/递延(Promises/Deferred)
   + [angular-promise-tracker](https://github.com/ajoslin/angular-promise-tracker) - Easily add spinners or general request tracking to your angular app
 + 认证(Authentication)
+  + [satellizer](https://github.com/sahat/satellizer) - 基于Token的AngularJs的认证  
   + [angular-client-side-auth](https://github.com/fnakstad/angular-client-side-auth)
 + Collections (& ngRepeat Stuff)
 + 测试(Testing)
@@ -112,8 +115,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [stackoverflow上的angularjs问题](http://stackoverflow.com/questions/tagged/angularjs)  
 [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
 [ng-newsletter.com](http://www.ng-newsletter.com/)   
-[ngmodules.org](http://ngmodules.org/)  
-[angular-js.in](http://angular-js.in/)  - A curated collection of angular directives  
+[ngmodules.org](http://ngmodules.org/) - 流行的Angular模块、插件和指令     
+[angular-js.in](http://angular-js.in/)  - 优秀Angular指令集合   
 
 
 ## 电子书
@@ -159,7 +162,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ## 编码风格/设计模式/最佳实践 
 [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)  
-[AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md) 
+[AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)  
 [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
 [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
 [angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns) - 以不同的视角看AngularJS  
@@ -167,7 +170,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ## 组件库
 *AngularJs扩展*  
-[Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap) 
+[Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap)  
 [angular-foundation](http://pineconellc.github.io/angular-foundation/)  
 [mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3  
 [angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
@@ -183,6 +186,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 *Table / Grid*  
 [Smart-Table](https://github.com/lorenzofox3/Smart-Table) - bootstrap风格的table/grid    
+[angular-deckgrid](https://github.com/akoenig/angular-deckgrid) - 轻量级的网格，支持AngularJS，它的指令不依赖于视觉表现    
 
 *表单相关*  
 [angular-validation](https://github.com/huei90/angular-validation) - Client Side Validation for AngularJS  
@@ -198,7 +202,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 *按钮*  
 [angular-promise-buttons](https://github.com/johannesjo/angular-promise-buttons) - 带加载状态的按钮   
 
-*模态框、消息提示* 
+*模态框、消息提示*  
+[angular-dialog-service](https://github.com/m-e-conroy/angular-dialog-service) - 增强angular-ui-bootstrap的modal指令      
 [ngDialog](https://github.com/likeastore/ngDialog) - Modals and popups provider for Angular.js applications   
 [angular-sweetalert](https://github.com/leftstick/angular-sweetalert) - 通过angular的方式暴露的sweetalert angular 指令  
 [ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular  
@@ -213,6 +218,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angular-material-icons](https://github.com/klarsys/angular-material-icons) - Material 风格的自定义颜色和大小的图标的 AngularJS directive。    
 
 *UI相关*  
+[lumX](https://github.com/lumapps/lumx) - 基于AngularJS和Google Material Design规范的第一个响应前端的框架    
 [angular-perfect-scrollbar](https://github.com/itsdrewmiller/angular-perfect-scrollbar) - 美化滚动条的小指令(封装perfect-scrollbar jQuery插件)  
 [angular-parallax](https://github.com/oblador/angular-parallax) - 轻量、高性能的视差滚动  
 [ngFx](https://github.com/Hendrixer/ngFx) - 简单, 漂亮的Angular动画库  
@@ -221,7 +227,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [angular-datepicker](https://github.com/alongubkin/angular-datepicker) - 日期/时间选择   
 [angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree) - A tree component for AngularJS, without jQuery as dependency.  
 [angular-xeditable](http://vitalets.github.io/angular-xeditable/) - Edit in place for AngularJS :+1:  
-[angular-intro.js](https://github.com/mendhak/angular-intro.js) -   
 [angular-scroll](https://github.com/oblador/angular-scroll) - Scrollspy, animated scrollTo and scroll events for angular.js  
 [angular-intro.js](https://github.com/mendhak/angular-intro.js) - 封装intro.js的AngularJs指令  
 [textAngular](https://github.com/fraywing/textAngular) - 文本编辑器  
@@ -236,6 +241,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ## 源码解析  
 [ui.router源码解析](http://www.html-js.com/article/Front-end-source-code-analysis-original-uirouter-source-code-analysis)  
+[AngularJS源码分析](http://www.ngnice.com/posts/1ba1b9b59cd3b5)  
 
 ## 更多AngularJs资源  
 [awesome-angularjs](https://github.com/gianarb/awesome-angularjs)  
