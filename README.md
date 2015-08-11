@@ -9,10 +9,11 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + [电子书](#电子书)
   + [教程](#教程)
   + [基础项目](#基础项目(seed))
-  + [编码风格/设计模式/最佳实践](#编码风格/设计模式/最佳实践)
+  + [编码风格/设计模式/最佳实践](#编码风格设计模式最佳实践)
   + [组件库](#组件库)
   + [Angular Gulp插件](#Angular Gulp插件)
   + [源码解析](#源码解析)  
+  + [业界实践与经验](#业界实践与经验)
   + [更多AngularJs资源](#更多AngularJs资源)
 
 # 概述
@@ -25,10 +26,11 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + 数据绑定(Data Binding)
   + 作用域(Scopes)
     + [理解AngularJS的作用域Scope](https://github.com/zensh/jsgen/blob/master/static/src/md/UnderstandingScopes.md)  
+    + [深入浅出Angular Scope和Digest脏值检测](http://www.iamght.com/2014/03/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAangular-scope%E5%92%8Cdigest/)  
   + 编译(Compiler)
   + 表达式(Expression)
   + 指令(Directive)
-    + [理解AngularJS的指令Directieve](docs/understandingDirectives.md)  
+    + [理解AngularJS的指令Directieve](docs/Understanding-Directives.md)  
   + 视图(View)和路由(Route)
     + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)  
     + [ui-router]  
@@ -63,6 +65,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + 认证(Authentication)
   + [satellizer](https://github.com/sahat/satellizer) - 基于Token的AngularJs的认证  
   + [angular-client-side-auth](https://github.com/fnakstad/angular-client-side-auth)
+  + [AngularJS 应用身份认证的技巧](https://blog.coding.net/blog/techniques-for-authentication-in-angular-js-applications)  
 + Collections (& ngRepeat Stuff)
 + 测试(Testing)
   + [angular-test-patterns](https://github.com/daniellmb/angular-test-patterns) - A High-Quality Guide for Testing Angular 1.x Applications
@@ -72,6 +75,10 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + [angular-fx](https://github.com/720kb/angular-fx) - Angular CSS3 animation directives
 
 ## 性能优化
++ $watch优化  
+  + [ANGULAR性能优化心得](http://hao.jser.com/archive/6610)   
+  + [bindonce](https://github.com/Pasvaz/bindonce) - 优化angular, 移除不必要的$watch  
+    *即插即用模块，它只保留了监控一次的指令；它还为我们提供了传递异步数据的能力*   
 + 缓存(Cache)
   + 数据缓存
     + $cacheFactory
@@ -81,7 +88,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + Cookie
     + [angular-local-storage](https://github.com/grevory/angular-local-storage)
 + 延迟加载
-  + [overmind](https://github.com/geddski/overmind)
+  + [overmind](https://github.com/geddski/overmind)  
+
 
 ## 综合
 + Utils
@@ -210,6 +218,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 *Loading*  
 [ngProgress](https://github.com/VictorBjelkholm/ngProgress) - 页面顶部的进度条 Angular provider  
+[angular-block-ui](https://github.com/McNull/angular-block-ui) -    
 [angular-busy](https://github.com/cgross/angular-busy) - 当$http请求时，在任意元素(或promise中)上显示 ```正在处理/加载``` 指示器。   
 [ng-notify](https://github.com/matowens/ng-notify) - 简单、轻量级模块A simple, lightweight module for displaying notifications in your AngularJS app.  
 [angular-spinner](https://github.com/urish/angular-spinner) -  显示动画loading的Angular指令(封装spin.js)     
@@ -221,7 +230,8 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [lumX](https://github.com/lumapps/lumx) - 基于AngularJS和Google Material Design规范的第一个响应前端的框架    
 [angular-perfect-scrollbar](https://github.com/itsdrewmiller/angular-perfect-scrollbar) - 美化滚动条的小指令(封装perfect-scrollbar jQuery插件)  
 [angular-parallax](https://github.com/oblador/angular-parallax) - 轻量、高性能的视差滚动  
-[ngFx](https://github.com/Hendrixer/ngFx) - 简单, 漂亮的Angular动画库  
+[ngFx](https://github.com/Hendrixer/ngFx) - 简单, 漂亮的Angular动画库   
+[angular-material-dashboard](https://github.com/flatlogic/angular-material-dashboard) - angular material风格的后台仪表盘  
 
 *Widgets*  
 [angular-datepicker](https://github.com/alongubkin/angular-datepicker) - 日期/时间选择   
@@ -240,8 +250,11 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) - 在$templateCache中串联和注册AngularJs模板  
 
 ## 源码解析  
-[ui.router源码解析](http://www.html-js.com/article/Front-end-source-code-analysis-original-uirouter-source-code-analysis)  
+[ui.router源码解析](http://www.html-js.com/article/Front-end-source-code-analysis-original-uirouter-source-code-analysis)   
 [AngularJS源码分析](http://www.ngnice.com/posts/1ba1b9b59cd3b5)  
+
+## 业界实践与经验  
+[AngularJS在Coding的实践](http://airjd.com/view/iaggff2g0004run#1)  
 
 ## 更多AngularJs资源  
 [awesome-angularjs](https://github.com/gianarb/awesome-angularjs)  
