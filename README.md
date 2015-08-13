@@ -8,6 +8,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + [资源](#资源)  
   + [电子书](#电子书)
   + [教程](#教程)
+  + [小示例](#小示例)
   + [基础项目](#基础项目(seed))
   + [编码风格/设计模式/最佳实践](#编码风格设计模式最佳实践)
   + [组件库](#组件库)
@@ -17,27 +18,39 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + [更多AngularJs资源](#更多AngularJs资源)
 
 # 概述
- 
-[有jQuery背景的开发者如何建立起AngularJS的思维模式?](http://www.infoq.com/cn/news/2013/11/how-to-think-angularjs)  
++ [AngularJS 介绍](docs/guide/introduction.md)  
++ [有jQuery背景的开发者如何建立起AngularJS的思维模式?](http://www.infoq.com/cn/news/2013/11/how-to-think-angularjs)  
 
 ## 核心概念
 
   + 初始化(Bootstrap)
+    + [Bootstrap 概述](http://docs.ngnice.com/guide/bootstrap)  
   + 数据绑定(Data Binding)
+    + [数据绑定 概述](http://docs.ngnice.com/guide/databinding)  
+    + [示例：理解AngularJS中的双向数据绑定](http://www.sitepoint.com/two-way-data-binding-angularjs)  
   + 作用域(Scopes)
+    + [作用域 概述](http://docs.ngnice.com/guide/scope)  
     + [理解AngularJS的作用域Scope](https://github.com/zensh/jsgen/blob/master/static/src/md/UnderstandingScopes.md)  
     + [深入浅出Angular Scope和Digest脏值检测](http://www.iamght.com/2014/03/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAangular-scope%E5%92%8Cdigest/)  
   + 编译(Compiler)
+    + [HTML编译 概述](http://docs.ngnice.com/guide/compiler)
   + 表达式(Expression)
+    + [表达式 概述](http://docs.ngnice.com/guide/expression)
   + 指令(Directive)
     + [理解AngularJS的指令Directieve](docs/Understanding-Directives.md)  
+    + [使用$provide.decorator方法去扩展angular现有指令](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/34)  
   + 视图(View)和路由(Route)
+    + [$location](http://docs.ngnice.com/guide/$location)  
+    + [AngualrJs路由设计探讨](docs/Routing-Design-Discussion.md)  
     + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)  
     + [ui-router]  
       + [嵌套状态和嵌套视图](docs/ui-router/README.md)  
   + 过滤器(Filter)
+    + [过滤器 概述](http://docs.ngnice.com/guide/filter)
   + 服务/供应商(Services/Providers)
-  + 表单(Form) 和 AngularJS的表单概念
+    + [AngularJS 之 Factory vs Service vs Provider](http://www.oschina.net/translate/angularjs-factory-vs-service-vs-provider)
+  + 表单(Form)
+    + [Angular表单 概述](docs/guide/forms.md)  
 
 ## 程序结构
 
@@ -151,6 +164,10 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 [material-start](https://github.com/angular/material-start) - Angular Material入门教程  
 [learning-angular](https://github.com/zafarali/learning-angular) - 学习Angular的教程(代码)    
 [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - AngularJS Up & Running Book for O'Reilly 源码    
+
+## 小示例
+[使用UI Router实现AngularJS 多步骤表单](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/37)  
+
 
 ## 基础项目(seed) 
 [generator-hottowel](https://github.com/johnpapa/generator-hottowel) - Yo generator that creates an Angular app via HotTowel    
