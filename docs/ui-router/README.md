@@ -4,7 +4,7 @@
 > 
 > 原文：[State Manager](https://github.com/angular-ui/ui-router/wiki)
 
-[[下一篇 (嵌套状态和嵌套视图) ►|Nested States and Nested Views]]
+[下一篇 (嵌套状态和嵌套视图) ►](Nested-States-and-Nested-Views.md)
 
 ##### 这个指南会让你深入了解UI-Router的组件和选项的方方面面。如果你仅仅需要一个快速参考指南，可以访问 [API Reference](http://angular-ui.github.io/ui-router/site)
 

@@ -31,7 +31,7 @@
 
 默认情况下，任何内容的变更会触发一个模型更新和表单验证。你可以用 `ngModelOptions` 指令绑定指定的事件列表来覆盖这个行为。例如，`ng-model-options="{ updateOn: 'blur' }"` 仅会在控件失去焦点后更新和验证。你可以用空格分格的列表设置几个事件。例如，`ng-model-options="{ updateOn: 'mousedown blur' }"`
 
-<img alt="animation showing debounced input" src="img/guide/forms-update-on-blur.gif">
+<img alt="animation showing debounced input" src="https://code.angularjs.org/1.4.3/docs/img/guide/forms-update-on-blur.gif">
 
 如果你想保持默认行为，只是在添加新的事件可能触发更新和验证，添加 "default" 作为指定的事件之一。
 If you want to keep the default behavior and just add new events that may trigger the model update
@@ -42,9 +42,9 @@ and validation, add "default" as one of the specified events.
 
 ## 非及时地(防抖动)模型更新
 
-通过指令的 'debounce' 属性可以延迟model的更新/验证。这个延迟也可以应用到解析器、验证器和像 `$dirty` 或 `$pristine` 的模型标志上。
+通过 ```ngModelOptions``` 指令的 'debounce' 属性可以延迟model的更新/验证。这个延迟也可以应用到解析器、验证器和像 `$dirty` 或 `$pristine` 的模型标志上。
 
-<img alt="animation showing debounced input" src="img/guide/forms-debounce.gif">
+<img alt="animation showing debounced input" src="https://code.angularjs.org/1.4.3/docs/img/guide/forms-debounce.gif">
 
 例如，`ng-model-options="{ debounce: 500 }"` 最后一次内容更改后等待半分钟，才会触发模型绑定和表单验证。
 

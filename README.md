@@ -43,7 +43,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
     + [$location](http://docs.ngnice.com/guide/$location)  
     + [AngualrJs路由设计探讨](docs/Routing-Design-Discussion.md)  
     + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)  
-    + [ui-router]  
+    + [ui-router](https://github.com/angular-ui/ui-router)  
       + [嵌套状态和嵌套视图](docs/ui-router/README.md)  
   + 过滤器(Filter)
     + [过滤器 概述](http://docs.ngnice.com/guide/filter)
