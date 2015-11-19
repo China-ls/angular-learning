@@ -8,10 +8,12 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + [资源](#资源)  
   + [电子书](#电子书)
   + [教程](#教程)
+  + [博客](#blog)
   + [小示例](#小示例)
   + [基础项目](#基础项目(seed))
   + [编码风格/设计模式/最佳实践](#编码风格设计模式最佳实践)
   + [组件库](#组件库)
+  + [进阶](#进阶)
   + [Angular Gulp插件](#Angular Gulp插件)
   + [源码解析](#源码解析)  
   + [业界实践与经验](#业界实践与经验)
@@ -134,7 +136,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 - [angular-resources](https://github.com/distilledhype/angular-resources)  
 - [angular-education](https://github.com/timjacobi/angular-education) - A collection of useful resources to learn and improve your AngularJS skills.  
 - [stackoverflow上的angularjs问题](http://stackoverflow.com/questions/tagged/angularjs)  
-- [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
 - [ng-newsletter.com](http://www.ng-newsletter.com/)   
 - [ngmodules.org](http://ngmodules.org/) - 流行的Angular模块、插件和指令     
 - [angular-js.in](http://angular-js.in/)  - 优秀Angular指令集合   
@@ -165,6 +166,11 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 - [learning-angular](https://github.com/zafarali/learning-angular) - 学习Angular的教程(代码)    
 - [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - AngularJS Up & Running Book for O'Reilly 源码    
 
+## Blog
+- [Minko Gechev's blog](http://blog.mgechev.com)
+- [Todd Motto: JavaScript and AngularJS articles](http://toddmotto.com)
+- [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
+
 ## 小示例
 - [使用UI Router实现AngularJS 多步骤表单](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/37)  
 
@@ -190,7 +196,7 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 - [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)  
 - [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
 - [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
-- [angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns) - 以不同的视角看AngularJS  
+- [angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns/blob/master/i18n/README-zh-cn.md) - AngularJS 模式  
 - [recipes-with-angular-js](https://github.com/fdietz/recipes-with-angular-js) - AngularJs技巧  
 
 ## 组件库
@@ -274,11 +280,14 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 - [angular-media-player](https://github.com/mrgamer/angular-media-player) -  包装&lt;audio&gt; 或 &lt;video&gt; 标签的指令, 暴露方法和属性来操作你的播放器  
 
+## 进阶
+- [angular-aop](https://github.com/mgechev/angular-aop)
+
 ## Angular Gulp插件  
 - [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) - 在$templateCache中串联和注册AngularJs模板  
 
 ## 源码解析  
-- [light-angularjs](https://github.com/mgechev/light-angularjs) - [使用200行代码创建属于你自己的精简版angular](http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/) ([中文](http://purplebamboo.github.io/2015/05/27/use-200-line-code-to-implementation-a-simple-angular/))  
+- [light-angularjs](https://github.com/mgechev/light-angularjs) - 使用200行代码创建属于你自己的精简版angular ([中文](http://purplebamboo.github.io/2015/05/27/use-200-line-code-to-implementation-a-simple-angular/))  
 - [ui.router源码解析](http://www.html-js.com/article/Front-end-source-code-analysis-original-uirouter-source-code-analysis)   
 - [AngularJS源码分析](http://www.ngnice.com/posts/1ba1b9b59cd3b5)  
 
