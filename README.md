@@ -1,10 +1,11 @@
 # angular-learning
-AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
+
+> more see: [awesome-angularjs](https://github.com/gianarb/awesome-angularjs) or [AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md)
 
 + 文档
   + [概述](#概述)
   + [核心概念](#核心概念)    
-  + [程序结构](#程序结构)  
+  + [进阶](#进阶)  
 + [资源](#资源)  
   + [电子书](#电子书)
   + [教程](#教程)
@@ -54,13 +55,10 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
   + 表单(Form)
     + [Angular表单 概述](docs/guide/forms.md)  
 
-## 程序结构
+## 进阶
 
-+ 组织架构(Code Organization)
-  + 目录组织结构
-    [angularjs-structure-styleguide](https://github.com/srph/angularjs-structure-styleguide) - AngularJs应用的结构最佳实践  
-  + 代码组织
-    + [angular-classy](https://github.com/davej/angular-classy)
++ 代码组织
+  + [angular-classy](https://github.com/davej/angular-classy) - 更清晰的基于
 + 程序装载: 依赖注入(DI, Dependency injection)
 + 把数据模型(Model)导出给视图(View): 作用域(Scope)
 + 和服务器通讯: $http, $resource
@@ -73,8 +71,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
     [Angular路由深入浅出](http://div.io/topic/1096)  
     [ui-router-extras](https://github.com/christopherthielen/ui-router-extras) - AngularJs ui-router增强版  
     [angular-breadcrumb](https://github.com/ncuillery/angular-breadcrumb) - 根据ui-router的state创建面包屑  
-+ 常量
-  + [grunt-ng-constant](https://github.com/werk85/grunt-ng-constant)
 + 承诺/递延(Promises/Deferred)
   + [angular-promise-tracker](https://github.com/ajoslin/angular-promise-tracker) - Easily add spinners or general request tracking to your angular app
 + 认证(Authentication)
@@ -110,9 +106,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 + Utils
   + [angular-underscore](https://github.com/floydsoft/angular-underscore)
   + [angular-collection](https://github.com/tomkuk/angular-collection)
-+ 整合其他语言/框架
-  + 高德地图
-  + 谷歌地图
 + 后端代管 Hosted Backends
 + 权限
   + [angular-client-side-auth](https://github.com/fnakstad/angular-client-side-auth) - One way to implement authentication/authorization in Angular applications
@@ -130,8 +123,6 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 - [AngularJS中文社区](http://angularjs.cn/)  
 - [官方文档](https://docs.angularjs.org/api)  
 - [官方指南](https://docs.angularjs.org/guide) - [中文版](http://docs.ngnice.com/guide)  
-- [awesome-angularjs](https://github.com/gianarb/awesome-angularjs) - AngularJs 服务,指令,实用工具资源  
-- [AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md) - AngularJs学习资源  
 - [frontend-resources#angular](https://github.com/JonathanZWhite/frontend-resources#angular)  
 - [angular-resources](https://github.com/distilledhype/angular-resources)  
 - [angular-education](https://github.com/timjacobi/angular-education) - A collection of useful resources to learn and improve your AngularJS skills.  
@@ -190,10 +181,12 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 - [angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)  
 - [ngbp](https://github.com/ngbp/ngbp) - A sophisticated build management system for web apps (formerly ng-boilerplate) 
 - [angular-login-example](https://github.com/mrgamer/angular-login-example) - 独立的项目，展示了如何建立一个稳健的angular应用, 用于提供服务器的访问权限  
+- [angular-architecture](https://github.com/comsysto/angular-architecture) - Angular1.x + TypeScript构建Angular大型应用 （博客: [深入剖析大型 Angular 应用](https://medium.com/@bojzi/anatomy-of-a-large-angular-application-f098e5e36994#.h5je3k7md)）
 
 ## 编码风格/设计模式/最佳实践 
 - [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)  
 - [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)  
+- [angularjs-structure-styleguide](https://github.com/srph/angularjs-structure-styleguide) - AngularJs应用的结构最佳实践
 - [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
 - [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
 - [angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns/blob/master/i18n/README-zh-cn.md) - AngularJS 模式  
@@ -294,7 +287,4 @@ AngularJs Learning stuffs ( Docs &amp; Resources &amp; Examples )
 
 ## 业界实践与经验  
 - [AngularJS在Coding的实践](http://airjd.com/view/iaggff2g0004run#1)  
-
-## 更多AngularJs资源  
-- [awesome-angularjs](https://github.com/gianarb/awesome-angularjs)  
 
