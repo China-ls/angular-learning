@@ -4,7 +4,7 @@
 
 + 文档
   + [概述](#概述)
-  + [核心概念](#核心概念)    
+  + [核心概念](#核心概念)
   + [进阶](#进阶)  
 + [资源](#资源)  
   + [电子书](#电子书)
@@ -16,44 +16,44 @@
   + [组件库](#组件库)
   + [进阶](#进阶)
   + [Angular Gulp插件](#Angular Gulp插件)
-  + [源码解析](#源码解析)  
+  + [源码解析](#源码解析)
   + [业界实践与经验](#业界实践与经验)
   + [更多AngularJs资源](#更多AngularJs资源)
 
 # 概述
-+ [AngularJS 介绍](docs/guide/introduction.md)  
++ [AngularJS 介绍](docs/guide/introduction.md)
 + [有jQuery背景的开发者如何建立起AngularJS的思维模式?](http://www.infoq.com/cn/news/2013/11/how-to-think-angularjs)  
 
 ## 核心概念
 
   + 初始化(Bootstrap)
-    + [Bootstrap 概述](http://docs.ngnice.com/guide/bootstrap)  
+    + [Bootstrap 概述](http://docs.ngnice.com/guide/bootstrap)
   + 数据绑定(Data Binding)
-    + [数据绑定 概述](http://docs.ngnice.com/guide/databinding)  
-    + [示例：理解AngularJS中的双向数据绑定](http://www.sitepoint.com/two-way-data-binding-angularjs)  
+    + [数据绑定 概述](http://docs.ngnice.com/guide/databinding)
+    + [示例：理解AngularJS中的双向数据绑定](http://www.sitepoint.com/two-way-data-binding-angularjs)
   + 作用域(Scopes)
-    + [作用域 概述](http://docs.ngnice.com/guide/scope)  
-    + [理解AngularJS的作用域Scope](https://github.com/zensh/jsgen/blob/master/static/src/md/UnderstandingScopes.md)  
-    + [深入浅出Angular Scope和Digest脏值检测](http://www.iamght.com/2014/03/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAangular-scope%E5%92%8Cdigest/)  
+    + [作用域 概述](http://docs.ngnice.com/guide/scope)
+    + [理解AngularJS的作用域Scope](https://github.com/zensh/jsgen/blob/master/static/src/md/UnderstandingScopes.md)
+    + [深入浅出Angular Scope和Digest脏值检测](http://www.iamght.com/2014/03/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAangular-scope%E5%92%8Cdigest/)
   + 编译(Compiler)
     + [HTML编译 概述](http://docs.ngnice.com/guide/compiler)
   + 表达式(Expression)
     + [表达式 概述](http://docs.ngnice.com/guide/expression)
   + 指令(Directive)
-    + [理解AngularJS的指令Directieve](docs/Understanding-Directives.md)  
-    + [使用$provide.decorator方法去扩展angular现有指令](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/34)  
+    + [理解AngularJS的指令Directieve](docs/Understanding-Directives.md)
+    + [使用$provide.decorator方法去扩展angular现有指令](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/34)
   + 视图(View)和路由(Route)
-    + [$location](http://docs.ngnice.com/guide/$location)  
-    + [AngualrJs路由设计探讨](docs/Routing-Design-Discussion.md)  
-    + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)  
-    + [ui-router](https://github.com/angular-ui/ui-router)  
-      + [嵌套状态和嵌套视图](docs/ui-router/README.md)  
+    + [$location](http://docs.ngnice.com/guide/$location)
+    + [AngualrJs路由设计探讨](docs/Routing-Design-Discussion.md)
+    + [多个命名视图](http://bubkoo.com/2014/01/01/angular/ui-router/guide/multiple-named-views/)
+    + [ui-router](https://github.com/angular-ui/ui-router)
+      + [嵌套状态和嵌套视图](docs/ui-router/README.md)
   + 过滤器(Filter)
     + [过滤器 概述](http://docs.ngnice.com/guide/filter)
   + 服务/供应商(Services/Providers)
     + [AngularJS 之 Factory vs Service vs Provider](http://www.oschina.net/translate/angularjs-factory-vs-service-vs-provider)
   + 表单(Form)
-    + [Angular表单 概述](docs/guide/forms.md)  
+    + [Angular表单 概述](docs/guide/forms.md)
 
 ## 进阶
 
@@ -64,13 +64,13 @@
 + 和服务器通讯: $http, $resource
   + 拦截器
   + [restangular](https://github.com/mgonto/restangular) - AngularJS service to handle Rest API Restful Resources properly and easily
-  + [angular-restmod](https://github.com/platanus/angular-restmod) - Rails inspired REST-API ORM for Angular  
-  + [以更RESTful的方式使用ngResource](http://my.oschina.net/buwei/blog/185082)  
+  + [angular-restmod](https://github.com/platanus/angular-restmod) - Rails inspired REST-API ORM for Angular
+  + [以更RESTful的方式使用ngResource](http://my.oschina.net/buwei/blog/185082)
 + 路由
-  + ui-router  
-    [Angular路由深入浅出](http://div.io/topic/1096)  
-    [ui-router-extras](https://github.com/christopherthielen/ui-router-extras) - AngularJs ui-router增强版  
-    [angular-breadcrumb](https://github.com/ncuillery/angular-breadcrumb) - 根据ui-router的state创建面包屑  
+  + ui-router
+    [Angular路由深入浅出](http://div.io/topic/1096)
+    [ui-router-extras](https://github.com/christopherthielen/ui-router-extras) - AngularJs ui-router增强版
+    [angular-breadcrumb](https://github.com/ncuillery/angular-breadcrumb) - 根据ui-router的state创建面包屑
 + 承诺/递延(Promises/Deferred)
   + [angular-promise-tracker](https://github.com/ajoslin/angular-promise-tracker) - Easily add spinners or general request tracking to your angular app
 + 认证(Authentication)
@@ -128,75 +128,82 @@
 - [angular-education](https://github.com/timjacobi/angular-education) - A collection of useful resources to learn and improve your AngularJS skills.  
 - [stackoverflow上的angularjs问题](http://stackoverflow.com/questions/tagged/angularjs)  
 - [ng-newsletter.com](http://www.ng-newsletter.com/)   
-- [ngmodules.org](http://ngmodules.org/) - 流行的Angular模块、插件和指令     
-- [angular-js.in](http://angular-js.in/)  - 优秀Angular指令集合   
+- [ngmodules.org](http://ngmodules.org/) - 流行的Angular模块、插件和指令
+- [angular-js.in](http://angular-js.in/)  - 优秀Angular指令集合
 
 
 ## 电子书
-- [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)  
-- [restangular](http://wohugb.gitbooks.io/restangular/content/)  
-- [Web Component Architecture & Development with AngularJS](https://leanpub.com/web-component-development-with-angularjs/read)  
-- [Practical AngularJS](https://leanpub.com/Practical_AngularJS/read)  
-- [Pro AngularJs](http://pan.baidu.com/s/1mglBAyO)  
-- [AngularJs By Example](http://pan.baidu.com/s/19CAyM)  
+- [angular-phonecat教程中文版](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/content/)
+- [restangular](http://wohugb.gitbooks.io/restangular/content/)
+- [Web Component Architecture & Development with AngularJS](https://leanpub.com/web-component-development-with-angularjs/read)
+- [Practical AngularJS](https://leanpub.com/Practical_AngularJS/read)
+- [Pro AngularJs](http://pan.baidu.com/s/1mglBAyO)
+- [AngularJs By Example](http://pan.baidu.com/s/19CAyM)
+- [angular-webpack-cookbook](http://dmachat.github.io/angular-webpack-cookbook/index.html) - 用webpack构建angular手册
 
 ## 教程
-- [AngularjsTutorial_cn](https://github.com/zensh/AngularjsTutorial_cn) - AngularJS入门教程     
-- [AngularJS学习笔记](http://www.zouyesheng.com/angular.html)  
-- [AngularJS体验式编程系列文章](http://blog.fens.me/series-angular/)  
-- [angularjshub.com](http://www.angularjshub.com/) - Angularjs示例    
-- [codecademy.com Angular教程](http://www.codecademy.com/learn/learn-angularjs) - Learn AngularJS  
-- [A Better Way to Learn AngularJS](https://thinkster.io/angulartutorial/a-better-way-to-learn-angularjs/)  
-- [使用AngularJS构建大型Web应用](http://www.infoq.com/cn/news/2013/02/angular-web-app)  
-- [Angular土豆视屏教程](http://www.tudou.com/plcover/AURJrOM6ntc/)  
-- [angular-phonecat](https://github.com/angular/angular-phonecat) - 官方示例项目  
-- [ng-demos](https://github.com/johnpapa/ng-demos) - variety of angular demos  
-- [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - All the source code for the AngularJS Up & Running Book for O'Reilly  
-- [AngularJS in 60 Minutes](http://fastandfluid.com/publicdownloads/AngularJSIn60MinutesIsh_DanWahlin_May2013.pdf)  
-- [material-start](https://github.com/angular/material-start) - Angular Material入门教程  
-- [learning-angular](https://github.com/zafarali/learning-angular) - 学习Angular的教程(代码)    
-- [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - AngularJS Up & Running Book for O'Reilly 源码    
+- [AngularjsTutorial_cn](https://github.com/zensh/AngularjsTutorial_cn) - AngularJS入门教程
+- [AngularJS学习笔记](http://www.zouyesheng.com/angular.html)
+- [AngularJS体验式编程系列文章](http://blog.fens.me/series-angular/)
+- [angularjshub.com](http://www.angularjshub.com/) - Angularjs示例
+- [codecademy.com Angular教程](http://www.codecademy.com/learn/learn-angularjs) - Learn AngularJS
+- [A Better Way to Learn AngularJS](https://thinkster.io/angulartutorial/a-better-way-to-learn-angularjs/)
+- [使用AngularJS构建大型Web应用](http://www.infoq.com/cn/news/2013/02/angular-web-app)
+- [Angular土豆视屏教程](http://www.tudou.com/plcover/AURJrOM6ntc/)
++ [angular-phonecat](https://github.com/angular/angular-phonecat) - 官方示例项目
+  - [angular-phonecat-book-zhcn](http://xdsnet.gitbooks.io/angular-phonecat-book-zhcn/) - angular-phonecat教程中文版
+- [ng-demos](https://github.com/johnpapa/ng-demos) - variety of angular demos
+- [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - All the source code for the AngularJS Up & Running Book for O'Reilly
+- [AngularJS in 60 Minutes](http://fastandfluid.com/publicdownloads/AngularJSIn60MinutesIsh_DanWahlin_May2013.pdf)
+- [material-start](https://github.com/angular/material-start) - Angular Material入门教程
+- [learning-angular](https://github.com/zafarali/learning-angular) - 学习Angular的教程(代码)
+- [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - AngularJS Up & Running Book for O'Reilly 源码
 
 ## Blog
 - [Minko Gechev's blog](http://blog.mgechev.com)
 - [Todd Motto: JavaScript and AngularJS articles](http://toddmotto.com)
-- [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)  
+- [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)
 
 ## 小示例
-- [使用UI Router实现AngularJS 多步骤表单](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/37)  
+- [使用UI Router实现AngularJS 多步骤表单](https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/37)
 
 
-## 基础项目(seed) 
-- [generator-hottowel](https://github.com/johnpapa/generator-hottowel) - Yo generator that creates an Angular app via HotTowel    
-- [angular-seed](https://github.com/angular/angular-seed) - angular种子文件（基础结构）  
-- [generator-angular](https://github.com/yeoman/generator-angular)  
-- [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)  
-- [angular-requirejs-seed](https://github.com/tnajdek/angular-requirejs-seed)  
-- [angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate)  
-- [angular-express-seed](https://github.com/btford/angular-express-seed)  
-- [ng-boilerplate](https://github.com/ngbp/ngbp) - 成熟的web apps构建管理系统  
-- [angular-kickstart](https://github.com/vesparny/angular-kickstart) - 基于 AngularJS，GulpJS 和 Bower 的完整可伸缩构建系统，能加快 AngularJS 应用的开发  
-- [angular-app](https://github.com/angular-app/angular-app) - Reference application for AngularJS, CURD application demo  
-- [sailng](https://github.com/ryancp/sailng) - Sails.js + Angular = Awesome  
-- [angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)  
-- [ngbp](https://github.com/ngbp/ngbp) - A sophisticated build management system for web apps (formerly ng-boilerplate) 
-- [angular-login-example](https://github.com/mrgamer/angular-login-example) - 独立的项目，展示了如何建立一个稳健的angular应用, 用于提供服务器的访问权限  
-- [angular-architecture](https://github.com/comsysto/angular-architecture) - Angular1.x + TypeScript构建Angular大型应用 （博客: [深入剖析大型 Angular 应用](https://medium.com/@bojzi/anatomy-of-a-large-angular-application-f098e5e36994#.h5je3k7md)）
+## 基础项目(seed)
 
-## 编码风格/设计模式/最佳实践 
-- [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)  
-- [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)  
+- [angular-seed](https://github.com/angular/angular-seed) - angular项目基础脚手架（官方出品）
++ Yeoman
+  - [generator-hottowel](https://github.com/johnpapa/generator-hottowel) - Yeoman生成Angular + Express项目
+  - [generator-angular](https://github.com/yeoman/generator-angular) - Yeoman生成Angular + Grunt项目（也可生成controller, directive等组件）
+  - [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular) - Yeoman生成Angular + Gulp项目
+- [angular-requirejs-seed](https://github.com/tnajdek/angular-requirejs-seed) - Angular 1.4.x + Require 2.1.x + Karma + Protractor
+- [angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate) - AngularJS + SASS + Gulp + Browserify + ES6, 最佳实践应用
+- [angular-es6-webpack-boilerplate](https://github.com/ziyasal/angular-es6-webpack-boilerplate) - AngularJS 1.4x + ES6 + TDD + Webpack 脚手架
+- [angular-login-example](https://github.com/mrgamer/angular-login-example) - 独立的项目，展示了如何建立一个稳健的angular应用, 用于提供服务器的访问权限
+- [NG6-starter](https://github.com/AngularClass/NG6-starter) - Angular + ES6 + (Webpack or JSPM) 脚手架
+- [preboot/angular-webpack](https://github.com/preboot/angular-webpack) - Angular + Webpack 简单脚手架
+- [packetloop/angular-webpack](https://github.com/packetloop/angular-webpack) - Angular + Webpack + Karma
+- [WebpackAngularDemos](https://github.com/ShMcK/WebpackAngularDemos) - Webpack + Angular + LumX
+
++ 管理后台
+  - [blur-admin](https://github.com/akveo/blur-admin) - Angular + Bootstrap 后台模板
+  - [angular-material-dashboard](https://github.com/flatlogic/angular-material-dashboard) - Angular + Material design 风格后台模板
+
+## 编码风格/设计模式/最佳实践
+
+- [AngularJS风格指南](https://github.com/johnpapa/angularjs-styleguide/blob/master/i18n/zh-CN.md)
+- [AngularJS应用的最佳实践和风格指南](https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md)
 - [angularjs-structure-styleguide](https://github.com/srph/angularjs-structure-styleguide) - AngularJs应用的结构最佳实践
-- [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)  
-- [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)  
-- [angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns/blob/master/i18n/README-zh-cn.md) - AngularJS 模式  
-- [recipes-with-angular-js](https://github.com/fdietz/recipes-with-angular-js) - AngularJs技巧  
+- [Angular风格指南](https://github.com/gocardless/angularjs-style-guide)
+- [AngularJS styleguide](https://github.com/toddmotto/angularjs-styleguide)
+- [angularjs-in-patterns](https://github.com/mgechev/angularjs-in-patterns/blob/master/i18n/README-zh-cn.md) - AngularJS 模式
+- [recipes-with-angular-js](https://github.com/fdietz/recipes-with-angular-js) - AngularJs技巧
 
 ## 组件库
-*AngularJs扩展*  
 
-- [Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap)  
-- [angular-foundation](http://pineconellc.github.io/angular-foundation/)  
+*AngularJs扩展*
+
+- [Angular UI](https://github.com/angular-ui/) —— [angularjs-ui-bootstrap](https://github.com/angular-ui/bootstrap)
+- [angular-foundation](http://pineconellc.github.io/angular-foundation/)
 - [mobile-angular-ui](https://github.com/mcasimir/mobile-angular-ui) - Angular.js Mobile UI Framework with Bootstrap 3  
 - [angular-strap](https://github.com/mgcrea/angular-strap) - AngularJS 1.2+ native directives for Bootstrap 3.  
 - [ng-showcase](https://github.com/angular-cn/ng-showcase) - Angular指令及组件的全面范例  
@@ -238,10 +245,10 @@
 - [angular-sweetalert](https://github.com/leftstick/angular-sweetalert) - 通过angular的方式暴露的sweetalert angular 指令  
 - [ng-tasty](https://github.com/Zizzamia/ng-tasty) - A tasty collection of reusable UI components for Angular  
 
-*Loading*  
+*Loading*
 
-- [ngProgress](https://github.com/VictorBjelkholm/ngProgress) - 页面顶部的进度条 Angular provider  
-- [angular-block-ui](https://github.com/McNull/angular-block-ui) -    
+- [ngProgress](https://github.com/VictorBjelkholm/ngProgress) - 页面线形进度条 Angular provider
+- [angular-block-ui](https://github.com/McNull/angular-block-ui) -
 - [angular-busy](https://github.com/cgross/angular-busy) - 当$http请求时，在任意元素(或promise中)上显示 ```正在处理/加载``` 指示器。   
 - [ng-notify](https://github.com/matowens/ng-notify) - 显示通知的简单、轻量级模块
 - [angular-spinner](https://github.com/urish/angular-spinner) -  显示动画loading的Angular指令(封装spin.js)     
