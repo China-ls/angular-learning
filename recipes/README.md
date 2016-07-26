@@ -1,3 +1,1 @@
-
-
-参考: https://github.com/fdietz/recipes-with-angular-js
+> 参考: https://github.com/fdietz/recipes-with-angular-js

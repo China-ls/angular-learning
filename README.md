@@ -160,6 +160,7 @@
 - [angularjs-up-and-running](https://github.com/shyamseshadri/angularjs-up-and-running) - AngularJS Up & Running Book for O'Reilly 源码
 
 ## Blog
+- [Ben Nadel's blog](http://www.bennadel.com/)
 - [Minko Gechev's blog](http://blog.mgechev.com)
 - [Todd Motto: JavaScript and AngularJS articles](http://toddmotto.com)
 - [破狼博客园 AngularJs](http://www.cnblogs.com/whitewolf/category/404298.html)
@@ -294,4 +295,3 @@
 
 ## 业界实践与经验  
 - [AngularJS在Coding的实践](http://airjd.com/view/iaggff2g0004run#1)  
-

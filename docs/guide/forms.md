@@ -1,9 +1,6 @@
-
-> 2015年8月11日， [huguangju](https://github.com/huguangju) 译
-> 
-> 译文：Angular 表单
-> 
-> 原文：[Angular 表单](https://code.angularjs.org/1.4.3/docs/guide/forms) 
+> 2015年8月11日， [huguangju](https://github.com/huguangju) 译 
+> 译文：Angular 表单 
+> 原文：[Angular 表单](https://code.angularjs.org/1.5.7/docs/guide/forms) 
 > **注：仅仅是对[Angular 表单 v1.2.8](http://docs.ngnice.com/guide/forms)中文文档的补充** 
 
 - [ ] 待翻译
